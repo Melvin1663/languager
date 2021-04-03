@@ -8,6 +8,7 @@ client.on('ready', () => {
 })
 
 client.on('message', (message) => {
+    if (message.author.bot || !message.guild) return
     if (message.member.hasPermission("ADMINISTRATOR")) return
     for (let i = 0; i < profanities.length; i++) {
         if (message.content.toLowerCase().includes(profanities[i].toLowerCase())) {
@@ -20,6 +21,7 @@ client.on('message', (message) => {
 })
 
 client.on('messageUpdate', (oldMessage, newMessage) => {
+    if (newMessage.author.bot || !newMessage.guild) return
     if (newMessage.member.hasPermission("ADMINISTRATOR")) return
     for (let i = 0; i < profanities.length; i++) {
         if (newMessage.content.toLowerCase().includes(profanities[i].toLowerCase())) {
