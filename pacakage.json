@@ -1,6 +1,15 @@
 {
-  "dependencies": {
+  "name": "languager",
+  "version": "1.0.0",
+  "description": "Languages Someone",
+  "main": "index.js",
+  "devDependencies": {
     "discord.js": "^12.5.3",
     "profanities": "^2.14.0"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Melvin Labad",
+  "license": "ISC"
 }
