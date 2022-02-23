@@ -33,4 +33,4 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
     }
 })
 
-client.login("ODI3NzkxNjE2Mjc3NzQxNjI4.YGgLBA.lHo2r-JDBf917-iMOsnKErU7iRE")
+client.login("")
